@@ -61,7 +61,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "IBM Plex Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10080,7 +10080,7 @@ article.pytorch-article blockquote {
   line-height: 1.375rem;
   color: #262626;
   letter-spacing: 0.01px;
-  font-weight: 500;
+  font-weight: 400;
 }
 article.pytorch-article table {
   margin-bottom: 2.5rem;
@@ -10151,7 +10151,7 @@ html {
 }
 @media screen and (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
