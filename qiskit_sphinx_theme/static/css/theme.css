@@ -57,9 +57,64 @@
   min-width: 50%;
 }
 
+.rst-versions.shift-up .rst-other-versions {
+  display: block;
+}
+
 article.pytorch-article .sphx-glr-thumbcontainer .figure::before {
   background: #F2F4F8 !important;
 }
+
+dl, ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+  list-style-image: none;
+}
+
+.rst-versions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100% !important;
+  color: #fcfcfc;
+  background: #1f1d1d;
+  font-family: sans-serif;
+  z-index: 400;
+}
+
+.rst-versions.shift-up {
+  height: auto;
+  max-height: 100%;
+  overflow-y: scroll;
+  width: auto;
+}
+
+.rst-versions .rst-other-versions dd a {
+  display: inline-block;
+  padding: 6px;
+  color: #fcfcfc;
+}
+
+.rst-versions .rst-other-versions {
+  font-size: 90%;
+  padding: 12px;
+  color: #DDE1E6;
+  display: none;
+}
+
+.rst-versions .rst-current-version {
+  padding: 12px;
+  background-color: #c7c7c7;
+  display: block;
+  text-align: right;
+  font-size: 90%;
+  cursor: pointer;
+  color: #31135e;
+  *zoom: 1;
+}
+
 
 *,
 *::before,
