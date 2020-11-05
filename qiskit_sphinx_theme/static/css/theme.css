@@ -36,6 +36,31 @@
   --font-family-monospace: "IBM PLex Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.wy-table-responsive table {
+  table-layout: auto !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+}
+
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+  background-color: #F2F4F8;
+}
+
+.rst-content table.docutils td, .rst-content table.docutils th, .rst-content table.field-list td, .rst-content table.field-list th, .wy-table td, .wy-table th {
+  margin: 0;
+  overflow: visible;
+}
+
+.rst-content table.docutils td:first-child, .rst-content table.docutils th:first-child, .rst-content table.field-list td:first-child, .rst-content table.field-list th:first-child, .wy-table td:first-child, .wy-table th:first-child {
+  border-left-width: 0;
+  width: auto;
+  min-width: 50%;
+}
+
+article.pytorch-article .sphx-glr-thumbcontainer .figure::before {
+  background: #F2F4F8 !important;
+}
+
 *,
 *::before,
 *::after {
