@@ -1,4 +1,13 @@
+"""qiskit_sphinx_theme
+
+A Sphinx theme for Qiskit that is based on the
+Pytorch Sphinx theme.
+"""
 from setuptools import setup
+
+DOCLINES = __doc__.split('\n')
+DESCRIPTION = DOCLINES[0]
+LONG_DESCRIPTION = "\n".join(DOCLINES[2:])
 
 setup(
     name = 'qiskit_sphinx_theme',
@@ -6,7 +15,8 @@ setup(
     author = 'nonhermitian',
     author_email= 'nonhermitian@gmail.com',
     url="https://github.com/nonhermitian/qiskit_sphinx_theme",
-    description='qiskit Sphinx Theme',
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
     py_modules = ['qiskit_sphinx_theme'],
     packages = ['qiskit_sphinx_theme'],
     include_package_data=True,
