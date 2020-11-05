@@ -88,64 +88,21 @@
 
       <div class="main-menu">
         <ul>
-          <li>
-            <a href="{{ theme_variables.external_urls['get_started'] }}">Get Started</a>
-          </li>
 
           <li>
-            <div class="ecosystem-dropdown">
-              <a id="dropdownMenuButton" data-toggle="ecosystem-dropdown">
-                Ecosystem
-              </a>
-              <div class="ecosystem-dropdown-menu">
-                <a class="nav-dropdown-item" href="{{ theme_variables.external_urls['hub'] }}"">
-                  <span class=dropdown-title>Models (Beta)</span>
-                  <p>Discover, publish, and reuse pre-trained models</p>
-                </a>
-                <a class="nav-dropdown-item" href="{{ theme_variables.external_urls['ecosystem'] }}">
-                  <span class=dropdown-title>Tools & Libraries</span>
-                  <p>Explore the ecosystem of tools and libraries</p>
-                </a>
-              </div>
-            </div>
+            <a href="{{ theme_variables.external_urls['resources'] }}" target="_blank">Learning Resources</a>
           </li>
 
           <li>
-            <a href="{{ theme_variables.external_urls['mobile'] }}">Mobile</a>
+            <a href="{{ theme_variables.external_urls['slack'] }}" target="_blank">Slack Support</a>
           </li>
 
           <li>
-            <a href="{{ theme_variables.external_urls['blog'] }}">Blog</a>
-          </li>
-
-          <li {%- if theme_pytorch_project == 'tutorials' %} class="active"{% endif %}>
-            <a href="{{ theme_variables.external_urls['tutorials'] }}">Tutorials</a>
-          </li>
-
-          <li {%- if theme_pytorch_project == 'docs' %} class="active"{% endif %}>
-            <a href="{{ theme_variables.external_urls['docs'] }}">Docs</a>
+            <a href="{{ theme_variables.external_urls['iqx'] }}" target="_blank">IBM Quantum Experience</a>
           </li>
 
           <li>
-            <div class="resources-dropdown">
-              <a id="resourcesDropdownButton" data-toggle="resources-dropdown">
-                Resources
-              </a>
-              <div class="resources-dropdown-menu">
-                <a class="nav-dropdown-item" href="{{ theme_variables.external_urls['resources'] }}"">
-                  <span class=dropdown-title>Developer Resources</span>
-                  <p>Find resources and get questions answered</p>
-                </a>
-                <a class="nav-dropdown-item" href="{{ theme_variables.external_urls['features'] }}">
-                  <span class=dropdown-title>About</span>
-                  <p>Learn about PyTorch’s features and capabilities</p>
-                </a>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['github'] }}">Github</a>
+            <a href="{{ theme_variables.external_urls['github'] }}" target="_blank">Github</a>
           </li>
         </ul>
       </div>
@@ -226,30 +183,6 @@
 
       <section data-toggle="wy-nav-shift" id="pytorch-content-wrap" class="pytorch-content-wrap">
         <div class="pytorch-content-left">
-
-        {% if theme_pytorch_project == 'tutorials' %}
-
-          <div class="pytorch-call-to-action-links">
-            <div id="tutorial-type">{{ pagename }}</div>
-
-            <div id="google-colab-link">
-              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-colab.svg', 1) }}"/>
-              <div class="call-to-action-desktop-view">Run in Google Colab</div>
-              <div class="call-to-action-mobile-view">Colab</div>
-            </div>
-            <div id="download-notebook-link">
-              <img class="call-to-action-notebook-img" src="{{ pathto('_static/images/pytorch-download.svg', 1) }}"/>
-              <div class="call-to-action-desktop-view">Download Notebook</div>
-              <div class="call-to-action-mobile-view">Notebook</div>
-            </div>
-            <div id="github-view-link">
-              <img class="call-to-action-img" src="{{ pathto('_static/images/pytorch-github.svg', 1) }}"/>
-              <div class="call-to-action-desktop-view">View on GitHub</div>
-              <div class="call-to-action-mobile-view">GitHub</div>
-            </div>
-          </div>
-
-        {% endif %}
 
         {%- block content %}
           {% if theme_style_external_links|tobool %}
