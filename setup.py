@@ -1,12 +1,10 @@
 from setuptools import setup
-from io import open
-from qiskit_sphinx_theme import __version__
 
 setup(
     name = 'qiskit_sphinx_theme',
-    version =__version__,
-    author = 'Shift Lab',
-    author_email= 'info@shiftlabny.com',
+    version = 1.0,
+    author = 'nonhermitian',
+    author_email= 'nonhermitian@gmail.com',
     url="https://github.com/nonhermitian/qiskit_sphinx_theme",
     description='qiskit Sphinx Theme',
     py_modules = ['qiskit_sphinx_theme'],
